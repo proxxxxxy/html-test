@@ -6,6 +6,16 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
     <title>エレクトロニクスコースの説明</title>
 </head>
 <body>
@@ -62,8 +72,8 @@
                 <div class="medium">オススメのサイト</div>
                 <div class="small">もしEコースに関連することを勉強したいのであれば以下のサイトがオススメです。
                     <ul>
-                     <li><a href="https://sakigake-robo.com/" target="_blank">魁高専</a></li>
-                     <li><a href="https://www.ct.omu.ac.jp/pect-lab/lecture/" target="_blank">PECT-LAB</a></li>
+                        <li><a href="https://sakigake-robo.com/" target="_blank">魁高専</a></li>
+                        <li><a href="https://www.ct.omu.ac.jp/pect-lab/lecture/" target="_blank">PECT-LAB</a></li>
                     </ul>
                 </div>
             </div>
