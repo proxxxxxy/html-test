@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Elianto';
-    src: url('Elianto Regular.ttf') format('truetype');
+    src: url('fElianto Regular.ttf') format('truetype');
 }
 
 @font-face {
@@ -16,7 +16,6 @@ html {
     overflow-y: scroll;
     background: url('background.png') repeat-y center top, #000;
     background-size: 100%;
-    background-color: black;
     animation: backgroundMove 10s infinite cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
@@ -41,8 +40,6 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: white;
-    font-family: 'PingFang SC Thin', Arial, sans-serif;
 }
 
 .title-container {
@@ -58,6 +55,7 @@ body {
     font-size: 8em;
     text-align: center;
     white-space: nowrap;
+    color: white;
     animation: fadeInSlideUp 1.8s ease-in-out;
     margin-bottom: -20px;
 }
@@ -81,13 +79,13 @@ body {
     height: 100%;
     pointer-events: none;
     animation: fadeInSlideUp 1s ease-in-out;
-    margin-bottom: 10px !important;
 }
 
 .content-container {
     display: flex;
     justify-content: center;
     width: 100%;
+    padding: 0 10px;
 }
 
 .content {
@@ -96,6 +94,8 @@ body {
     margin-top: 10vh;
     text-align: left;
     padding: 0 20px;
+    color: white;
+    font-family: 'PingFang SC Thin', Arial, sans-serif;
 }
 
 .fuzzy {
@@ -135,14 +135,12 @@ body {
     font-size: 2.5em;
     margin: 1.5em 0 0.5em 0;
     animation: fadeInSlideUp 2s ease-in-out;
-    font-weight: bold;
 }
 
 .medium {
     font-size: 2em;
     margin: 1.5em 0 0.01em 0;
     animation: fadeInSlideUp 2s ease-in-out;
-    font-weight: bold;
 }
 
 .small {
@@ -232,14 +230,14 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Media Queries for Responsive Design */
-@media (max-width: 768px) {
+/* Responsive Design */
+@media screen and (max-width: 768px) {
     .electronics-title {
-        font-size: 5em;
+        font-size: 4em;
     }
 
     .large {
-        font-size: 1.8em;
+        font-size: 2em;
     }
 
     .medium {
@@ -250,12 +248,25 @@ a:hover {
         font-size: 1.2em;
     }
 
+    .inline-block {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .formula {
+        font-size: 1.5em;
+    }
+
+    .content-container {
+        padding: 0 10px;
+    }
+
     .content {
         padding: 0 10px;
     }
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
     .electronics-title {
         font-size: 3em;
     }
@@ -272,7 +283,11 @@ a:hover {
         font-size: 1em;
     }
 
-    .content {
-        padding: 0 5px;
+    .formula {
+        font-size: 1.2em;
+    }
+
+    .formula-caption {
+        font-size: 0.8em;
     }
 }
